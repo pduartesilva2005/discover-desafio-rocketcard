@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Rocketcard</title>
+  </head>
+  <body>
+    <div class="container">
+      <span>
+        <div class="title">
+          <p>Compartilhe seu #rocketcard</p>
+        </div>
+
+        <div class="background-card">
+          <div class="card">
+            <div class="card-header">
+              <div class="card-logo">
+                <img src="./assets/logo.svg" alt="Logo da Rocketcard" />
+              </div>
+              <p id="userLogin" class="card-slug"></p>
+            </div>
+
+            <div class="card-body">
+              <div class="image-public">
+                <img alt="Imagem de perfil" id="userImage" />
+              </div>
+            </div>
+
+            <div class="info">
+              <div class="github-info">
+                <img src="./assets/followers.svg" alt="Followers" />
+                <p id="userFollowers"></p>
+                <p>Seguidores</p>
+              </div>
+
+              <div class="github-info">
+                <img src="./assets/following.svg" alt="Following" />
+                <p id="userFollowing"></p>
+                <p>Seguindo</p>
+              </div>
+
+              <div class="github-info">
+                <img src="./assets/repository.svg" alt="Repositories" />
+                <p id="userRepositories"></p>
+                <p>Seguidores</p>
+              </div>
+
+              <div class="github-info">
+                <img src="./assets/company.svg" alt="Company" />
+                <p id="userCompany"></p>
+              </div>
+
+              <div class="github-info">
+                <img src="./assets/location.svg" alt="Location" />
+                <p id="userLocation"></p>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <img src="./assets/logo.svg" alt="Logo da Rocketcard" />
+              <strong>ROCKET</strong>CARD
+            </div>
+          </div>
+        </div>
+      </span>
+
+      <div class="customize">
+        <span>
+          <p>Customizar Rocketcard</p>
+
+          <div class="buttons">
+            <button class="button" id="color" onclick="randomColor()">
+              Gerar background
+            </button>
+          </div>
+        </span>
+      </div>
+    </div>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
